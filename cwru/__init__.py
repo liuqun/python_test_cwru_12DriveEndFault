@@ -46,7 +46,7 @@ class CWRU:
                 exit(1)
 
     def _download(self, fpath, link):
-        print("Downloading to: '{}'".format(fpath))
+        print("Downloading {} and writing to file: '{}')".format(link, fpath))
         urllib.URLopener().retrieve(link, fpath)
 
     def _load_and_slice_data(self, rdir, infos):
